@@ -1,0 +1,59 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Experience from '../components/Experience.astro';
+import Achievements from '../components/Achievements.astro';
+import Competencies from '../components/Competencies.astro';
+import Tools from '../components/Tools.astro';
+import Education from '../components/Education.astro';
+---
+
+<BaseLayout
+  title="Sameer Khayrani"
+  description="Award-winning customer operations professional combining revenue recovery, customer relations, service quality and practical business improvement."
+>
+  <Hero />
+
+  <!-- Stats Bar (inverted) -->
+  <div class="stats-bar">
+    <div class="stat-card">
+      <div class="stat-number">£270K</div>
+      <div class="stat-label">Revenue Recovered</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">46%</div>
+      <div class="stat-label">Conversion Rate</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">1,500+</div>
+      <div class="stat-label">Monthly Follow-ups</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">30+</div>
+      <div class="stat-label">Agents Mentored</div>
+    </div>
+  </div>
+
+  <!-- Summary -->
+  <section class="section" id="summary">
+    <div class="section-heading">
+      <span class="section-num">01</span>
+      <h2>Professional Summary</h2>
+    </div>
+    <p class="summary-text">
+      Award-winning customer operations professional combining <strong>revenue recovery</strong>,
+      <strong>customer relations</strong>, <strong>service quality</strong> and practical
+      <strong>business improvement</strong>. Sole recovery specialist at Get Licensed, with
+      <strong>£270,000 personally recovered</strong> and return-to-course conversion increased
+      from 30% to 46%. Leadership experience includes managing <strong>28 teachers</strong>,
+      mentoring <strong>30+ support agents</strong>, coordinating scheduling/training/performance
+      activity, and building team-used automation, forecasting and operational QA solutions.
+    </p>
+  </section>
+
+  <Experience />
+  <Achievements />
+  <Competencies />
+  <Tools />
+  <Education />
+</BaseLayout>
